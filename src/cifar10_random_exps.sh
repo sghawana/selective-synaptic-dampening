@@ -14,7 +14,7 @@ seed=$2
 forget_perc=0.00165 # 100 samples
 dataset=Cifar10
 n_classes=10
-weight_path= # Add the path to your ResNet weights
+weight_path=/home/mtech1/selective-synaptic-dampening/src/checkpoint/ResNet18/Tuesday_13_August_2024_23h_33m_22s/ResNet18-Cifar10-19-best.pth
 
 # Run the Python script
 CUDA_VISIBLE_DEVICES=$DEVICE python forget_random_main.py -net ResNet18 -dataset $dataset -classes $n_classes -gpu -method baseline -forget_perc $forget_perc -weight_path $weight_path -seed $seed

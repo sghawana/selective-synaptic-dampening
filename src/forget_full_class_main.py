@@ -109,7 +109,7 @@ batch_size = args.b
 
 # get network
 net = getattr(models, args.net)(num_classes=args.classes)
-net.load_state_dict(torch.load(args.weight_path))
+net.load_state_dict(torch.load(args.weight_path, weights_only=True))
 
 # for bad teacher
 unlearning_teacher = getattr(models, args.net)(num_classes=args.classes)

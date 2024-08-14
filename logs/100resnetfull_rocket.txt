@@ -1,0 +1,496 @@
+(base) mtech1@auk:~/selective-synaptic-dampening/src$ ./cifar100_fullclass_exps.sh 1 1
+
+-----------------------------------------------------------------------------------------------------------------------
+BASELINE
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+75.55732727050781 75.40780639648438 tensor(0.9799) 0.954
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 84.63541
+wandb:           MIA 0.954
+wandb:    MethodTime 103.50813
+wandb: RetainTestAcc 75.40781
+wandb:       TestAcc 75.55733
+wandb:           ZRF 0.97995
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_170511-xxf8fra8
+wandb: Find logs at: ./wandb/offline-run-20240812_170511-xxf8fra8/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+SSD TUNING
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+{'lower_bound': 1, 'exponent': 1, 'magnitude_diff': None, 'min_layer': -1, 'max_layer': -1, 'forget_threshold': 1, 'dampening_constant': 1, 'selection_weighting': 10}
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+72.47213745117188 73.13507843017578 tensor(0.9947) 0.008
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.008
+wandb:    MethodTime 123.57702
+wandb: RetainTestAcc 73.13508
+wandb:       TestAcc 72.47214
+wandb:           ZRF 0.99474
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_170801-2bhoczhp
+wandb: Find logs at: ./wandb/offline-run-20240812_170801-2bhoczhp/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+FINETUNE
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.02000, train_loss: 1.4462, val_loss: 1.5730, val_acc: 58.2405
+Epoch [1], last_lr: 0.02000, train_loss: 0.8388, val_loss: 1.4672, val_acc: 61.6312
+Epoch [2], last_lr: 0.02000, train_loss: 0.5576, val_loss: 1.4372, val_acc: 63.0929
+Epoch [3], last_lr: 0.02000, train_loss: 0.4008, val_loss: 1.4250, val_acc: 64.1596
+Epoch [4], last_lr: 0.02000, train_loss: 0.2886, val_loss: 1.4764, val_acc: 63.3999
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+62.778663635253906 63.399925231933594 tensor(0.9877) 0.186
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.186
+wandb:    MethodTime 190.55445
+wandb: RetainTestAcc 63.39993
+wandb:       TestAcc 62.77866
+wandb:           ZRF 0.98772
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_171555-ien34lvb
+wandb: Find logs at: ./wandb/offline-run-20240812_171555-ien34lvb/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+AMNESIAC
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.00010, train_loss: 0.0977, val_loss: 1.1981, val_acc: 72.1114
+Epoch [1], last_lr: 0.00010, train_loss: 0.0814, val_loss: 1.1924, val_acc: 71.1492
+Epoch [2], last_lr: 0.00010, train_loss: 0.0533, val_loss: 1.2037, val_acc: 71.5460
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+70.85987091064453 71.54600524902344 tensor(0.9946) 0.274
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.274
+wandb:    MethodTime 138.49755
+wandb: RetainTestAcc 71.54601
+wandb:       TestAcc 70.85987
+wandb:           ZRF 0.99463
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_172229-e23t9f0y
+wandb: Find logs at: ./wandb/offline-run-20240812_172229-e23t9f0y/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+BLINDSPOT
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 1 Unlearning Loss 0.000603552209213376
+72.82046508789062 73.51814270019531 tensor(0.9990) 0.0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.0
+wandb:    MethodTime 107.64116
+wandb: RetainTestAcc 73.51814
+wandb:       TestAcc 72.82047
+wandb:           ZRF 0.99899
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_172648-3ixuc5dx
+wandb: Find logs at: ./wandb/offline-run-20240812_172648-3ixuc5dx/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+UNSIR
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Loss: 302.87750244140625
+Loss: 125.84234619140625
+Loss: 41.79347610473633
+Loss: 9.411497116088867
+Loss: -1.4645004272460938
+Epoch [0], last_lr: 0.00010, train_loss: 0.2196, val_loss: 1.2333, val_acc: 70.1781
+Epoch [0], last_lr: 0.00010, train_loss: 0.0573, val_loss: 1.1112, val_acc: 72.6613
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+72.25318145751953 72.66129302978516 tensor(0.9918) 0.006
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 26.5625
+wandb:           MIA 0.006
+wandb:    MethodTime 157.10955
+wandb: RetainTestAcc 72.66129
+wandb:       TestAcc 72.25318
+wandb:           ZRF 0.99177
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_172936-ft19rr72
+wandb: Find logs at: ./wandb/offline-run-20240812_172936-ft19rr72/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+RETRAIN
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.00999, train_loss: 1.4380, val_loss: 1.5814, val_acc: 60.1870
+Epoch [1], last_lr: 0.01999, train_loss: 1.1112, val_loss: 1.7498, val_acc: 54.4868
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:232: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+Epoch [2], last_lr: 0.01000, train_loss: 0.4242, val_loss: 1.2850, val_acc: 67.0290
+Epoch [3], last_lr: 0.01000, train_loss: 0.1377, val_loss: 1.1937, val_acc: 69.9230
+Epoch [4], last_lr: 0.01000, train_loss: 0.0665, val_loss: 1.1515, val_acc: 71.2298
+Epoch [5], last_lr: 0.01000, train_loss: 0.0418, val_loss: 1.1892, val_acc: 71.7724
+Epoch [6], last_lr: 0.01000, train_loss: 0.0253, val_loss: 1.0783, val_acc: 73.2405
+Epoch [7], last_lr: 0.01000, train_loss: 0.0148, val_loss: 1.0589, val_acc: 73.4567
+Epoch [8], last_lr: 0.01000, train_loss: 0.0097, val_loss: 1.0005, val_acc: 74.6573
+Epoch [9], last_lr: 0.01000, train_loss: 0.0082, val_loss: 0.9918, val_acc: 74.9230
+Epoch [10], last_lr: 0.01000, train_loss: 0.0080, val_loss: 0.9827, val_acc: 75.1759
+Epoch [11], last_lr: 0.01000, train_loss: 0.0080, val_loss: 0.9784, val_acc: 75.3977
+Epoch [12], last_lr: 0.01000, train_loss: 0.0087, val_loss: 0.9962, val_acc: 75.0147
+Epoch [13], last_lr: 0.01000, train_loss: 0.0083, val_loss: 0.9897, val_acc: 75.4188
+Epoch [14], last_lr: 0.01000, train_loss: 0.0086, val_loss: 0.9922, val_acc: 75.4078
+Epoch [15], last_lr: 0.01000, train_loss: 0.0088, val_loss: 0.9977, val_acc: 75.5993
+Epoch [16], last_lr: 0.01000, train_loss: 0.0095, val_loss: 1.0149, val_acc: 75.1512
+Epoch [17], last_lr: 0.01000, train_loss: 0.0576, val_loss: 2.4172, val_acc: 45.9091
+Epoch [18], last_lr: 0.01000, train_loss: 0.9293, val_loss: 1.5381, val_acc: 60.9732
+Epoch [19], last_lr: 0.01000, train_loss: 0.4138, val_loss: 1.4906, val_acc: 63.1149
+Epoch [20], last_lr: 0.01000, train_loss: 0.2336, val_loss: 1.3939, val_acc: 65.7487
+Epoch [21], last_lr: 0.01000, train_loss: 0.1371, val_loss: 1.4124, val_acc: 65.8972
+Epoch [22], last_lr: 0.01000, train_loss: 0.0770, val_loss: 1.3035, val_acc: 69.0552
+Epoch [23], last_lr: 0.01000, train_loss: 0.0390, val_loss: 1.2763, val_acc: 70.0449
+Epoch [24], last_lr: 0.01000, train_loss: 0.0289, val_loss: 1.2023, val_acc: 70.3766
+Epoch [25], last_lr: 0.01000, train_loss: 0.0179, val_loss: 1.1480, val_acc: 71.6936
+Epoch [26], last_lr: 0.01000, train_loss: 0.0098, val_loss: 1.0877, val_acc: 72.9225
+Epoch [27], last_lr: 0.01000, train_loss: 0.0075, val_loss: 1.0631, val_acc: 72.9188
+Epoch [28], last_lr: 0.01000, train_loss: 0.0063, val_loss: 1.0418, val_acc: 73.6739
+Epoch [29], last_lr: 0.01000, train_loss: 0.0065, val_loss: 1.0321, val_acc: 73.8206
+Epoch [30], last_lr: 0.01000, train_loss: 0.0068, val_loss: 1.0417, val_acc: 74.2247
+Epoch [31], last_lr: 0.01000, train_loss: 0.0072, val_loss: 1.0495, val_acc: 74.2192
+Epoch [32], last_lr: 0.01000, train_loss: 0.0076, val_loss: 1.0503, val_acc: 74.2779
+Epoch [33], last_lr: 0.01000, train_loss: 0.0081, val_loss: 1.0527, val_acc: 74.4153
+Epoch [34], last_lr: 0.01000, train_loss: 0.0084, val_loss: 1.0703, val_acc: 73.8462
+Epoch [35], last_lr: 0.01000, train_loss: 0.0086, val_loss: 1.0841, val_acc: 74.0304
+Epoch [36], last_lr: 0.01000, train_loss: 0.0091, val_loss: 1.0959, val_acc: 74.0121
+Epoch [37], last_lr: 0.01000, train_loss: 0.5110, val_loss: 1.7626, val_acc: 54.4996
+Epoch [38], last_lr: 0.01000, train_loss: 0.7620, val_loss: 1.7414, val_acc: 56.6954
+Epoch [39], last_lr: 0.01000, train_loss: 0.3159, val_loss: 1.5006, val_acc: 62.9518
+Epoch [40], last_lr: 0.01000, train_loss: 0.1796, val_loss: 1.5794, val_acc: 62.9610
+Epoch [41], last_lr: 0.01000, train_loss: 0.1120, val_loss: 1.4646, val_acc: 64.9753
+Epoch [42], last_lr: 0.01000, train_loss: 0.0643, val_loss: 1.3907, val_acc: 66.7064
+Epoch [43], last_lr: 0.01000, train_loss: 0.0336, val_loss: 1.3255, val_acc: 67.9939
+Epoch [44], last_lr: 0.01000, train_loss: 0.0151, val_loss: 1.1577, val_acc: 71.6331
+Epoch [45], last_lr: 0.01000, train_loss: 0.0082, val_loss: 1.1369, val_acc: 71.7540
+Epoch [46], last_lr: 0.01000, train_loss: 0.0064, val_loss: 1.1072, val_acc: 72.3745
+Epoch [47], last_lr: 0.01000, train_loss: 0.0063, val_loss: 1.0978, val_acc: 72.3130
+Epoch [48], last_lr: 0.01000, train_loss: 0.0069, val_loss: 1.0954, val_acc: 72.9738
+Epoch [49], last_lr: 0.01000, train_loss: 0.0067, val_loss: 1.0902, val_acc: 73.2661
+Epoch [50], last_lr: 0.01000, train_loss: 0.0068, val_loss: 1.0927, val_acc: 73.3312
+Epoch [51], last_lr: 0.01000, train_loss: 0.0074, val_loss: 1.1050, val_acc: 73.0050
+Epoch [52], last_lr: 0.01000, train_loss: 0.0077, val_loss: 1.1162, val_acc: 73.1791
+Epoch [53], last_lr: 0.01000, train_loss: 0.0080, val_loss: 1.1265, val_acc: 73.1048
+Epoch [54], last_lr: 0.01000, train_loss: 0.0087, val_loss: 1.1263, val_acc: 73.1387
+Epoch [55], last_lr: 0.01000, train_loss: 0.0087, val_loss: 1.1321, val_acc: 73.1186
+Epoch [56], last_lr: 0.01000, train_loss: 0.0087, val_loss: 1.1456, val_acc: 73.3559
+Epoch [57], last_lr: 0.01000, train_loss: 0.0092, val_loss: 1.1564, val_acc: 72.8776
+Epoch [58], last_lr: 0.01000, train_loss: 0.0097, val_loss: 1.1611, val_acc: 72.6668
+Epoch [59], last_lr: 0.01000, train_loss: 0.3460, val_loss: 2.3699, val_acc: 43.5218
+Epoch [60], last_lr: 0.00200, train_loss: 0.3737, val_loss: 1.2027, val_acc: 69.4914
+Epoch [61], last_lr: 0.00200, train_loss: 0.0459, val_loss: 1.1708, val_acc: 70.7616
+Epoch [62], last_lr: 0.00200, train_loss: 0.0182, val_loss: 1.1657, val_acc: 71.4067
+Epoch [63], last_lr: 0.00200, train_loss: 0.0123, val_loss: 1.1689, val_acc: 71.6688
+Epoch [64], last_lr: 0.00200, train_loss: 0.0093, val_loss: 1.1756, val_acc: 71.6835
+Epoch [65], last_lr: 0.00200, train_loss: 0.0078, val_loss: 1.1776, val_acc: 71.5937
+Epoch [66], last_lr: 0.00200, train_loss: 0.0073, val_loss: 1.1819, val_acc: 71.6138
+Epoch [67], last_lr: 0.00200, train_loss: 0.0069, val_loss: 1.1830, val_acc: 71.6037
+Epoch [68], last_lr: 0.00200, train_loss: 0.0066, val_loss: 1.1904, val_acc: 71.5937
+Epoch [69], last_lr: 0.00200, train_loss: 0.0063, val_loss: 1.1920, val_acc: 71.5423
+Epoch [70], last_lr: 0.00200, train_loss: 0.0060, val_loss: 1.1885, val_acc: 71.6642
+Epoch [71], last_lr: 0.00200, train_loss: 0.0059, val_loss: 1.1918, val_acc: 71.5277
+Epoch [72], last_lr: 0.00200, train_loss: 0.0058, val_loss: 1.2001, val_acc: 71.7999
+Epoch [73], last_lr: 0.00200, train_loss: 0.0059, val_loss: 1.2019, val_acc: 71.4727
+Epoch [74], last_lr: 0.00200, train_loss: 0.0057, val_loss: 1.2007, val_acc: 71.4122
+Epoch [75], last_lr: 0.00200, train_loss: 0.0058, val_loss: 1.2061, val_acc: 71.5332
+Epoch [76], last_lr: 0.00200, train_loss: 0.0058, val_loss: 1.2055, val_acc: 71.3618
+Epoch [77], last_lr: 0.00200, train_loss: 0.0059, val_loss: 1.2066, val_acc: 71.6734
+Epoch [78], last_lr: 0.00200, train_loss: 0.0060, val_loss: 1.2093, val_acc: 71.6945
+Epoch [79], last_lr: 0.00200, train_loss: 0.0059, val_loss: 1.2135, val_acc: 71.8054
+Epoch [80], last_lr: 0.00200, train_loss: 0.0060, val_loss: 1.2154, val_acc: 71.6239
+Epoch [81], last_lr: 0.00200, train_loss: 0.0060, val_loss: 1.2246, val_acc: 71.4425
+Epoch [82], last_lr: 0.00200, train_loss: 0.0060, val_loss: 1.2194, val_acc: 71.5185
+Epoch [83], last_lr: 0.00200, train_loss: 0.0062, val_loss: 1.2224, val_acc: 71.6037
+Epoch [84], last_lr: 0.00200, train_loss: 0.0063, val_loss: 1.2249, val_acc: 71.5937
+Epoch [85], last_lr: 0.00200, train_loss: 0.0062, val_loss: 1.2272, val_acc: 71.3361
+Epoch [86], last_lr: 0.00200, train_loss: 0.0064, val_loss: 1.2313, val_acc: 71.6239
+Epoch [87], last_lr: 0.00200, train_loss: 0.0065, val_loss: 1.2342, val_acc: 71.3664
+Epoch [88], last_lr: 0.00200, train_loss: 0.0065, val_loss: 1.2295, val_acc: 71.7000
+Epoch [89], last_lr: 0.00200, train_loss: 0.0066, val_loss: 1.2413, val_acc: 71.3966
+Epoch [90], last_lr: 0.00200, train_loss: 0.0067, val_loss: 1.2429, val_acc: 71.3719
+Epoch [91], last_lr: 0.00200, train_loss: 0.0068, val_loss: 1.2450, val_acc: 71.5130
+Epoch [92], last_lr: 0.00200, train_loss: 0.0068, val_loss: 1.2451, val_acc: 71.6037
+Epoch [93], last_lr: 0.00200, train_loss: 0.0067, val_loss: 1.2472, val_acc: 71.7247
+Epoch [94], last_lr: 0.00200, train_loss: 0.0069, val_loss: 1.2459, val_acc: 71.4076
+Epoch [95], last_lr: 0.00200, train_loss: 0.0071, val_loss: 1.2485, val_acc: 71.4580
+Epoch [96], last_lr: 0.00200, train_loss: 0.0068, val_loss: 1.2474, val_acc: 71.5891
+Epoch [97], last_lr: 0.00200, train_loss: 0.0070, val_loss: 1.2542, val_acc: 71.3169
+Epoch [98], last_lr: 0.00200, train_loss: 0.0070, val_loss: 1.2556, val_acc: 71.6596
+Epoch [99], last_lr: 0.00200, train_loss: 0.0074, val_loss: 1.2558, val_acc: 71.4874
+Epoch [100], last_lr: 0.00200, train_loss: 0.0072, val_loss: 1.2552, val_acc: 71.3572
+Epoch [101], last_lr: 0.00200, train_loss: 0.0072, val_loss: 1.2648, val_acc: 71.0695
+Epoch [102], last_lr: 0.00200, train_loss: 0.0072, val_loss: 1.2650, val_acc: 71.4177
+Epoch [103], last_lr: 0.00200, train_loss: 0.0075, val_loss: 1.2691, val_acc: 71.4333
+Epoch [104], last_lr: 0.00200, train_loss: 0.0076, val_loss: 1.2692, val_acc: 71.3013
+Epoch [105], last_lr: 0.00200, train_loss: 0.0072, val_loss: 1.2667, val_acc: 71.4177
+Epoch [106], last_lr: 0.00200, train_loss: 0.0071, val_loss: 1.2701, val_acc: 71.2463
+Epoch [107], last_lr: 0.00200, train_loss: 0.0074, val_loss: 1.2746, val_acc: 71.3517
+Epoch [108], last_lr: 0.00200, train_loss: 0.0074, val_loss: 1.2787, val_acc: 71.1703
+Epoch [109], last_lr: 0.00200, train_loss: 0.0074, val_loss: 1.2708, val_acc: 71.2463
+Epoch [110], last_lr: 0.00200, train_loss: 0.0075, val_loss: 1.2704, val_acc: 71.4021
+Epoch [111], last_lr: 0.00200, train_loss: 0.0076, val_loss: 1.2767, val_acc: 71.2207
+Epoch [112], last_lr: 0.00200, train_loss: 0.0075, val_loss: 1.2836, val_acc: 71.0484
+Epoch [113], last_lr: 0.00200, train_loss: 0.0074, val_loss: 1.2772, val_acc: 71.4571
+Epoch [114], last_lr: 0.00200, train_loss: 0.0075, val_loss: 1.2823, val_acc: 71.1859
+Epoch [115], last_lr: 0.00200, train_loss: 0.0076, val_loss: 1.2804, val_acc: 71.4828
+Epoch [116], last_lr: 0.00200, train_loss: 0.0075, val_loss: 1.2816, val_acc: 71.3921
+Epoch [117], last_lr: 0.00200, train_loss: 0.0076, val_loss: 1.2845, val_acc: 71.3416
+Epoch [118], last_lr: 0.00200, train_loss: 0.0077, val_loss: 1.2843, val_acc: 71.2656
+Epoch [119], last_lr: 0.00200, train_loss: 0.0079, val_loss: 1.2821, val_acc: 71.3160
+Epoch [120], last_lr: 0.00040, train_loss: 0.0081, val_loss: 1.2830, val_acc: 71.3407
+Epoch [121], last_lr: 0.00040, train_loss: 0.0076, val_loss: 1.2885, val_acc: 71.2051
+Epoch [122], last_lr: 0.00040, train_loss: 0.0074, val_loss: 1.2908, val_acc: 71.3416
+Epoch [123], last_lr: 0.00040, train_loss: 0.0074, val_loss: 1.2868, val_acc: 71.3820
+Epoch [124], last_lr: 0.00040, train_loss: 0.0074, val_loss: 1.2843, val_acc: 71.2656
+Epoch [125], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.2908, val_acc: 71.2454
+Epoch [126], last_lr: 0.00040, train_loss: 0.0073, val_loss: 1.2886, val_acc: 71.3361
+Epoch [127], last_lr: 0.00040, train_loss: 0.0072, val_loss: 1.2956, val_acc: 71.1749
+Epoch [128], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.2889, val_acc: 71.2555
+Epoch [129], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.2991, val_acc: 71.2207
+Epoch [130], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.2888, val_acc: 71.3059
+Epoch [131], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.2929, val_acc: 71.0741
+Epoch [132], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.2931, val_acc: 71.4773
+Epoch [133], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.2952, val_acc: 71.3361
+Epoch [134], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3001, val_acc: 71.3710
+Epoch [135], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.2992, val_acc: 71.3416
+Epoch [136], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3003, val_acc: 71.1400
+Epoch [137], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3045, val_acc: 71.1950
+Epoch [138], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3003, val_acc: 71.2097
+Epoch [139], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.2989, val_acc: 71.3407
+Epoch [140], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3093, val_acc: 70.9238
+Epoch [141], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.3011, val_acc: 71.3517
+Epoch [142], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.3068, val_acc: 71.0942
+Epoch [143], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.3035, val_acc: 71.3361
+Epoch [144], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.3018, val_acc: 71.2812
+Epoch [145], last_lr: 0.00040, train_loss: 0.0069, val_loss: 1.3063, val_acc: 71.2757
+Epoch [146], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3043, val_acc: 71.5588
+Epoch [147], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3005, val_acc: 71.4773
+Epoch [148], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3039, val_acc: 71.3316
+Epoch [149], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3083, val_acc: 71.1749
+Epoch [150], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3036, val_acc: 71.3966
+Epoch [151], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3085, val_acc: 71.3664
+Epoch [152], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3113, val_acc: 71.2802
+Epoch [153], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3079, val_acc: 71.2711
+Epoch [154], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3024, val_acc: 71.3306
+Epoch [155], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3084, val_acc: 71.3215
+Epoch [156], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3203, val_acc: 71.0841
+Epoch [157], last_lr: 0.00040, train_loss: 0.0070, val_loss: 1.3069, val_acc: 71.3169
+Epoch [158], last_lr: 0.00040, train_loss: 0.0071, val_loss: 1.3066, val_acc: 71.2958
+Epoch [159], last_lr: 0.00040, train_loss: 0.0072, val_loss: 1.3123, val_acc: 71.2656
+Epoch [160], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3112, val_acc: 71.1345
+Epoch [161], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3114, val_acc: 71.4223
+Epoch [162], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3092, val_acc: 71.1501
+Epoch [163], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3160, val_acc: 71.0594
+Epoch [164], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3146, val_acc: 71.4012
+Epoch [165], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3116, val_acc: 71.2802
+Epoch [166], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3087, val_acc: 71.3160
+Epoch [167], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3165, val_acc: 71.2152
+Epoch [168], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3104, val_acc: 71.4324
+Epoch [169], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3112, val_acc: 71.3105
+Epoch [170], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3188, val_acc: 71.2207
+Epoch [171], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3107, val_acc: 71.4415
+Epoch [172], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3154, val_acc: 71.3664
+Epoch [173], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3171, val_acc: 70.9430
+Epoch [174], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3128, val_acc: 71.2656
+Epoch [175], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3086, val_acc: 71.4727
+Epoch [176], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3175, val_acc: 71.2967
+Epoch [177], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3168, val_acc: 71.0997
+Epoch [178], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3127, val_acc: 71.1043
+Epoch [179], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3166, val_acc: 71.2757
+Epoch [180], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3179, val_acc: 71.0887
+Epoch [181], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3108, val_acc: 71.4214
+Epoch [182], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3139, val_acc: 71.2353
+Epoch [183], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3141, val_acc: 71.2610
+Epoch [184], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3207, val_acc: 71.3508
+Epoch [185], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3120, val_acc: 71.2665
+Epoch [186], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3171, val_acc: 71.1657
+Epoch [187], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3143, val_acc: 71.3206
+Epoch [188], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3224, val_acc: 71.2353
+Epoch [189], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3152, val_acc: 71.3710
+Epoch [190], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3157, val_acc: 71.1492
+Epoch [191], last_lr: 0.00008, train_loss: 0.0072, val_loss: 1.3130, val_acc: 71.3517
+Epoch [192], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3222, val_acc: 71.1904
+Epoch [193], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3200, val_acc: 71.2308
+Epoch [194], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3172, val_acc: 71.1345
+Epoch [195], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3177, val_acc: 71.2408
+Epoch [196], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3163, val_acc: 71.1602
+Epoch [197], last_lr: 0.00008, train_loss: 0.0070, val_loss: 1.3213, val_acc: 71.1804
+Epoch [198], last_lr: 0.00008, train_loss: 0.0071, val_loss: 1.3196, val_acc: 71.1501
+Epoch [199], last_lr: 0.00008, train_loss: 0.0069, val_loss: 1.3164, val_acc: 71.3114
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+70.65087890625 71.3114013671875 tensor(0.9969) 0.01
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.01
+wandb:    MethodTime 3560.10016
+wandb: RetainTestAcc 71.3114
+wandb:       TestAcc 70.65088
+wandb:           ZRF 0.99688
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240812_173251-q0k673se
+wandb: Find logs at: ./wandb/offline-run-20240812_173251-q0k673se/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 # Pass the GPU ID with the first parameter (e.g., 0; check via nvidia-smi)
 
 #!/bin/bash
-#set -e # uncomment to make the script stop when an error occurs; otherwise will ignore
+set -e # uncomment to make the script stop when an error occurs; otherwise will ignore
 DEVICE=$1
 
 
