@@ -1,0 +1,424 @@
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+epoch 1 training time consumed: 464.14s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB |  18139 GiB |  18138 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  18050 GiB |  18049 GiB |
+|       from small pool |      4 MiB |     14 MiB |     89 GiB |     89 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB |  18139 GiB |  18138 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  18050 GiB |  18049 GiB |
+|       from small pool |      4 MiB |     14 MiB |     89 GiB |     89 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB |  18121 GiB |  18120 GiB |
+|       from large pool |   1006 MiB |   8041 MiB |  18032 GiB |  18031 GiB |
+|       from small pool |      4 MiB |     14 MiB |     89 GiB |     89 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484993 KiB | 540437 KiB |   3734 GiB |   3734 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |   3641 GiB |   3640 GiB |
+|       from small pool |   2017 KiB |  10112 KiB |     93 GiB |     93 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     611    |     808    |     867 K  |     866 K  |
+|       from large pool |     223    |     296    |     455 K  |     455 K  |
+|       from small pool |     388    |     512    |     411 K  |     410 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     611    |     808    |     867 K  |     866 K  |
+|       from large pool |     223    |     296    |     455 K  |     455 K  |
+|       from small pool |     388    |     512    |     411 K  |     410 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      78    |     141    |  401441    |  401363    |
+|       from large pool |      61    |     129    |  246297    |  246236    |
+|       from small pool |      17    |      21    |  155144    |  155127    |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 1, Average loss: 0.0289, Accuracy: 0.5188, Time consumed:37.18s
+
+saving weights file to checkpoint/ViT/Wednesday_14_August_2024_16h_45m_59s/ViT-Cifar100-1-best.pth
+epoch 2 training time consumed: 466.64s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB |  36278 GiB |  36277 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  36099 GiB |  36098 GiB |
+|       from small pool |      4 MiB |     14 MiB |    178 GiB |    178 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB |  36278 GiB |  36277 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  36099 GiB |  36098 GiB |
+|       from small pool |      4 MiB |     14 MiB |    178 GiB |    178 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB |  36242 GiB |  36241 GiB |
+|       from large pool |   1006 MiB |   8041 MiB |  36064 GiB |  36063 GiB |
+|       from small pool |      4 MiB |     14 MiB |    178 GiB |    178 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484993 KiB | 540437 KiB |   7470 GiB |   7470 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |   7284 GiB |   7283 GiB |
+|       from small pool |   2017 KiB |  10112 KiB |    186 GiB |    186 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     612    |     809    |    1733 K  |    1733 K  |
+|       from large pool |     223    |     296    |     911 K  |     911 K  |
+|       from small pool |     389    |     513    |     821 K  |     821 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     612    |     809    |    1733 K  |    1733 K  |
+|       from large pool |     223    |     296    |     911 K  |     911 K  |
+|       from small pool |     389    |     513    |     821 K  |     821 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      83    |     142    |     766 K  |     766 K  |
+|       from large pool |      61    |     129    |     492 K  |     492 K  |
+|       from small pool |      22    |      26    |     274 K  |     274 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 2, Average loss: 0.0269, Accuracy: 0.5353, Time consumed:37.20s
+
+saving weights file to checkpoint/ViT/Wednesday_14_August_2024_16h_45m_59s/ViT-Cifar100-2-best.pth
+epoch 3 training time consumed: 466.47s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB |  54417 GiB |  54416 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  54149 GiB |  54148 GiB |
+|       from small pool |      4 MiB |     14 MiB |    267 GiB |    267 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB |  54417 GiB |  54416 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  54149 GiB |  54148 GiB |
+|       from small pool |      4 MiB |     14 MiB |    267 GiB |    267 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB |  54363 GiB |  54362 GiB |
+|       from large pool |   1006 MiB |   8041 MiB |  54095 GiB |  54094 GiB |
+|       from small pool |      4 MiB |     14 MiB |    267 GiB |    267 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484993 KiB | 540437 KiB |  11206 GiB |  11206 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  10927 GiB |  10927 GiB |
+|       from small pool |   2017 KiB |  10112 KiB |    279 GiB |    279 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     612    |     809    |    2600 K  |    2599 K  |
+|       from large pool |     223    |     296    |    1367 K  |    1367 K  |
+|       from small pool |     389    |     513    |    1232 K  |    1232 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     612    |     809    |    2600 K  |    2599 K  |
+|       from large pool |     223    |     296    |    1367 K  |    1367 K  |
+|       from small pool |     389    |     513    |    1232 K  |    1232 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      79    |     142    |    1134 K  |    1134 K  |
+|       from large pool |      61    |     129    |     738 K  |     738 K  |
+|       from small pool |      18    |      26    |     396 K  |     396 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 3, Average loss: 0.0287, Accuracy: 0.5016, Time consumed:37.44s
+
+epoch 4 training time consumed: 466.58s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB |  72556 GiB |  72555 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  72198 GiB |  72197 GiB |
+|       from small pool |      4 MiB |     14 MiB |    357 GiB |    357 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB |  72556 GiB |  72555 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  72198 GiB |  72197 GiB |
+|       from small pool |      4 MiB |     14 MiB |    357 GiB |    357 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB |  72484 GiB |  72483 GiB |
+|       from large pool |   1006 MiB |   8041 MiB |  72127 GiB |  72126 GiB |
+|       from small pool |      4 MiB |     14 MiB |    357 GiB |    357 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484992 KiB | 542484 KiB |  14942 GiB |  14942 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  14570 GiB |  14570 GiB |
+|       from small pool |   2016 KiB |  10112 KiB |    372 GiB |    372 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     613    |     810    |    3466 K  |    3466 K  |
+|       from large pool |     223    |     296    |    1823 K  |    1823 K  |
+|       from small pool |     390    |     514    |    1643 K  |    1643 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     613    |     810    |    3466 K  |    3466 K  |
+|       from large pool |     223    |     296    |    1823 K  |    1823 K  |
+|       from small pool |     390    |     514    |    1643 K  |    1643 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      83    |     143    |    1536 K  |    1536 K  |
+|       from large pool |      61    |     129    |     985 K  |     985 K  |
+|       from small pool |      22    |      28    |     551 K  |     551 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 4, Average loss: 0.0338, Accuracy: 0.4196, Time consumed:37.17s
+
+epoch 5 training time consumed: 466.31s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB |  90694 GiB |  90693 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  90248 GiB |  90247 GiB |
+|       from small pool |      4 MiB |     14 MiB |    446 GiB |    446 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB |  90694 GiB |  90693 GiB |
+|       from large pool |   1010 MiB |   8048 MiB |  90248 GiB |  90247 GiB |
+|       from small pool |      4 MiB |     14 MiB |    446 GiB |    446 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB |  90605 GiB |  90604 GiB |
+|       from large pool |   1006 MiB |   8041 MiB |  90159 GiB |  90158 GiB |
+|       from small pool |      4 MiB |     14 MiB |    446 GiB |    446 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484992 KiB | 542484 KiB |  18678 GiB |  18678 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  18213 GiB |  18213 GiB |
+|       from small pool |   2016 KiB |  10112 KiB |    465 GiB |    465 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     613    |     810    |    4333 K  |    4332 K  |
+|       from large pool |     223    |     296    |    2279 K  |    2279 K  |
+|       from small pool |     390    |     514    |    2054 K  |    2053 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     613    |     810    |    4333 K  |    4332 K  |
+|       from large pool |     223    |     296    |    2279 K  |    2279 K  |
+|       from small pool |     390    |     514    |    2054 K  |    2053 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      85    |     143    |    1935 K  |    1935 K  |
+|       from large pool |      61    |     129    |    1231 K  |    1231 K  |
+|       from small pool |      24    |      29    |     703 K  |     703 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 5, Average loss: 0.0357, Accuracy: 0.3988, Time consumed:37.29s
+
+epoch 6 training time consumed: 466.24s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB | 108833 GiB | 108832 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 108298 GiB | 108297 GiB |
+|       from small pool |      4 MiB |     14 MiB |    535 GiB |    535 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB | 108833 GiB | 108832 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 108298 GiB | 108297 GiB |
+|       from small pool |      4 MiB |     14 MiB |    535 GiB |    535 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB | 108726 GiB | 108725 GiB |
+|       from large pool |   1006 MiB |   8041 MiB | 108190 GiB | 108189 GiB |
+|       from small pool |      4 MiB |     14 MiB |    535 GiB |    535 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484992 KiB | 542484 KiB |  22416 GiB |  22416 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  21857 GiB |  21856 GiB |
+|       from small pool |   2016 KiB |  10112 KiB |    559 GiB |    559 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     613    |     810    |    5200 K  |    5199 K  |
+|       from large pool |     223    |     296    |    2735 K  |    2734 K  |
+|       from small pool |     390    |     514    |    2465 K  |    2464 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     613    |     810    |    5200 K  |    5199 K  |
+|       from large pool |     223    |     296    |    2735 K  |    2734 K  |
+|       from small pool |     390    |     514    |    2465 K  |    2464 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      79    |     143    |    2282 K  |    2281 K  |
+|       from large pool |      61    |     129    |    1477 K  |    1477 K  |
+|       from small pool |      18    |      29    |     804 K  |     804 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 6, Average loss: 0.0448, Accuracy: 0.3114, Time consumed:37.31s
+
+epoch 7 training time consumed: 466.05s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB | 126972 GiB | 126971 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 126347 GiB | 126346 GiB |
+|       from small pool |      4 MiB |     14 MiB |    625 GiB |    625 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB | 126972 GiB | 126971 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 126347 GiB | 126346 GiB |
+|       from small pool |      4 MiB |     14 MiB |    625 GiB |    625 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB | 126847 GiB | 126846 GiB |
+|       from large pool |   1006 MiB |   8041 MiB | 126222 GiB | 126221 GiB |
+|       from small pool |      4 MiB |     14 MiB |    624 GiB |    624 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484992 KiB | 542484 KiB |  26153 GiB |  26153 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  25500 GiB |  25499 GiB |
+|       from small pool |   2016 KiB |  10112 KiB |    653 GiB |    653 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     613    |     810    |    6066 K  |    6066 K  |
+|       from large pool |     223    |     296    |    3191 K  |    3190 K  |
+|       from small pool |     390    |     514    |    2875 K  |    2875 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     613    |     810    |    6066 K  |    6066 K  |
+|       from large pool |     223    |     296    |    3191 K  |    3190 K  |
+|       from small pool |     390    |     514    |    2875 K  |    2875 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      78    |     143    |    2679 K  |    2679 K  |
+|       from large pool |      61    |     129    |    1723 K  |    1723 K  |
+|       from small pool |      17    |      29    |     955 K  |     955 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 7, Average loss: 0.0247, Accuracy: 0.5663, Time consumed:37.24s
+
+saving weights file to checkpoint/ViT/Wednesday_14_August_2024_16h_45m_59s/ViT-Cifar100-7-best.pth
+epoch 8 training time consumed: 465.80s
+GPU INFO.....
+|===========================================================================|
+|                  PyTorch CUDA memory summary, device ID 0                 |
+|---------------------------------------------------------------------------|
+|            CUDA OOMs: 0            |        cudaMalloc retries: 0         |
+|===========================================================================|
+|        Metric         | Cur Usage  | Peak Usage | Tot Alloc  | Tot Freed  |
+|---------------------------------------------------------------------------|
+| Allocated memory      |   1014 MiB |   8061 MiB | 145111 GiB | 145110 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 144397 GiB | 144396 GiB |
+|       from small pool |      4 MiB |     14 MiB |    714 GiB |    714 GiB |
+|---------------------------------------------------------------------------|
+| Active memory         |   1014 MiB |   8061 MiB | 145111 GiB | 145110 GiB |
+|       from large pool |   1010 MiB |   8048 MiB | 144397 GiB | 144396 GiB |
+|       from small pool |      4 MiB |     14 MiB |    714 GiB |    714 GiB |
+|---------------------------------------------------------------------------|
+| Requested memory      |   1010 MiB |   8054 MiB | 144968 GiB | 144967 GiB |
+|       from large pool |   1006 MiB |   8041 MiB | 144254 GiB | 144253 GiB |
+|       from small pool |      4 MiB |     14 MiB |    714 GiB |    714 GiB |
+|---------------------------------------------------------------------------|
+| GPU reserved memory   |   8402 MiB |   8402 MiB |   8402 MiB |      0 B   |
+|       from large pool |   8386 MiB |   8386 MiB |   8386 MiB |      0 B   |
+|       from small pool |     16 MiB |     16 MiB |     16 MiB |      0 B   |
+|---------------------------------------------------------------------------|
+| Non-releasable memory | 484993 KiB | 542484 KiB |  29889 GiB |  29889 GiB |
+|       from large pool | 482976 KiB | 538415 KiB |  29143 GiB |  29142 GiB |
+|       from small pool |   2017 KiB |  10112 KiB |    746 GiB |    746 GiB |
+|---------------------------------------------------------------------------|
+| Allocations           |     612    |     810    |    6933 K  |    6932 K  |
+|       from large pool |     223    |     296    |    3646 K  |    3646 K  |
+|       from small pool |     389    |     514    |    3286 K  |    3286 K  |
+|---------------------------------------------------------------------------|
+| Active allocs         |     612    |     810    |    6933 K  |    6932 K  |
+|       from large pool |     223    |     296    |    3646 K  |    3646 K  |
+|       from small pool |     389    |     514    |    3286 K  |    3286 K  |
+|---------------------------------------------------------------------------|
+| GPU reserved segments |     159    |     159    |     159    |       0    |
+|       from large pool |     151    |     151    |     151    |       0    |
+|       from small pool |       8    |       8    |       8    |       0    |
+|---------------------------------------------------------------------------|
+| Non-releasable allocs |      78    |     143    |    3022 K  |    3022 K  |
+|       from large pool |      61    |     129    |    1970 K  |    1970 K  |
+|       from small pool |      17    |      29    |    1052 K  |    1052 K  |
+|---------------------------------------------------------------------------|
+| Oversize allocations  |       0    |       0    |       0    |       0    |
+|---------------------------------------------------------------------------|
+| Oversize GPU segments |       0    |       0    |       0    |       0    |
+|===========================================================================|
+Evaluating Network.....
+Test set: Epoch: 8, Average loss: 0.0238, Accuracy: 0.5775, Time consumed:37.11s
+
+saving weights file to checkpoint/ViT/Wednesday_14_August_2024_16h_45m_59s/ViT-Cifar100-8-best.pth

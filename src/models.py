@@ -4,6 +4,7 @@ And https://github.com/weiaicunzai/pytorch-cifar100 (better performance) <- Refe
 """
 
 from torch import nn
+import torch.nn.functional as F
 import numpy as np
 import torch
 from torchvision.models import resnet18
@@ -164,7 +165,8 @@ class AllCNN(nn.Module):
 class ViT(nn.Module):
     def __init__(self, num_classes=20, **kwargs):
         super(ViT, self).__init__()
-        self.base = ViTModel.from_pretrained("google/vit-base-patch16-224")
+        #self.base = ViTModel.from_pretrained("google/vit-base-patch16-224")
+        self.base = ViTModel.from_pretrained('google/vit-base-patch16-224-in21k')
         self.final = nn.Linear(self.base.config.hidden_size, num_classes)
         self.num_classes = num_classes
         self.relu = nn.ReLU()

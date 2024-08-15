@@ -166,7 +166,7 @@ wandb: Find logs at: ./wandb/offline-run-20240812_172229-e23t9f0y/logs
 wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
 
 -----------------------------------------------------------------------------------------------------------------------
-BLINDSPOT
+BLINDSPOT(TEACHER)
 -----------------------------------------------------------------------------------------------------------------------
 Files already downloaded and verified
 Files already downloaded and verified

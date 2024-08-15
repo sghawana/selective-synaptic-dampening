@@ -10,13 +10,14 @@ seed=$2
 #############################################################
 ################ CIFAR20 SUBCLASS FORGETTING ################
 #############################################################
-declare -a StringArray=("rocket" "mushroom" "baby" "lamp" "sea") # classes to iterate over
+#declare -a StringArray=("rocket" "mushroom" "baby" "lamp" "sea") # classes to iterate over
+declare -a StringArray=("rocket")
 
 dataset=Cifar20
 n_superclasses=20
 n_subclasses=100
 
-weight_path= # Add the path to your ResNet weights
+weight_path=/home/mtech1/selective-synaptic-dampening/src/checkpoint/ResNet18/Wednesday_14_August_2024_11h_24m_35s/ResNet18-Cifar20-40-best.pth
 
 for val in "${StringArray[@]}"; do
     forget_class=$val

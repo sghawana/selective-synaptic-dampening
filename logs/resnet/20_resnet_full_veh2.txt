@@ -1,0 +1,333 @@
+(base) mtech1@auk:~/selective-synaptic-dampening/src$ ./cifar20_fullclass_exps.sh 1 1
+
+-----------------------------------------------------------------------------------------------------------------------
+BASELINE
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+81.58837890625 81.64250183105469 tensor(0.8707) 0.8692
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 81.52043
+wandb:           MIA 0.8692
+wandb:    MethodTime 555.44616
+wandb: RetainTestAcc 81.6425
+wandb:       TestAcc 81.58838
+wandb:           ZRF 0.87065
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_133640-c93xebro
+wandb: Find logs at: ./wandb/offline-run-20240814_133640-c93xebro/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+SSD TUNING
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+{'lower_bound': 1, 'exponent': 1, 'magnitude_diff': None, 'min_layer': -1, 'max_layer': -1, 'forget_threshold': 1, 'dampening_constant': 1, 'selection_weighting': 10}
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+77.98567199707031 82.12787628173828 tensor(0.9564) 0.0868
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.0868
+wandb:    MethodTime 549.04232
+wandb: RetainTestAcc 82.12788
+wandb:       TestAcc 77.98567
+wandb:           ZRF 0.95636
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_134657-563orf6j
+wandb: Find logs at: ./wandb/offline-run-20240814_134657-563orf6j/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+FINETUNE
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3       
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.02000, train_loss: 0.7503, val_loss: 0.9457, val_acc: 71.2009
+Epoch [1], last_lr: 0.02000, train_loss: 0.4832, val_loss: 0.8845, val_acc: 73.4660
+Epoch [2], last_lr: 0.02000, train_loss: 0.3846, val_loss: 0.9288, val_acc: 72.1611
+Epoch [3], last_lr: 0.02000, train_loss: 0.3102, val_loss: 0.9598, val_acc: 72.6690
+Epoch [4], last_lr: 0.02000, train_loss: 0.2482, val_loss: 0.9810, val_acc: 72.8742
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+69.20780181884766 72.87422180175781 tensor(0.9443) 0.3136
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.3136
+wandb:    MethodTime 668.98371
+wandb: RetainTestAcc 72.87422
+wandb:       TestAcc 69.2078
+wandb:           ZRF 0.94428
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_135717-i1n7vy3g
+wandb: Find logs at: ./wandb/offline-run-20240814_135717-i1n7vy3g/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+AMNESIAC
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.00010, train_loss: 0.3242, val_loss: 0.7082, val_acc: 81.0582
+Epoch [1], last_lr: 0.00010, train_loss: 0.2032, val_loss: 0.7676, val_acc: 80.7511
+Epoch [2], last_lr: 0.00010, train_loss: 0.1551, val_loss: 0.8299, val_acc: 79.4718
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+75.47770690917969 79.4717788696289 tensor(0.9864) 0.0508
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.0508
+wandb:    MethodTime 618.08829
+wandb: RetainTestAcc 79.47178
+wandb:       TestAcc 75.47771
+wandb:           ZRF 0.98642
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_140908-zsqni67f
+wandb: Find logs at: ./wandb/offline-run-20240814_140908-zsqni67f/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+BLINDSPOT(TEACHER)
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 1 Unlearning Loss 0.011267712339758873
+77.03025817871094 80.97734832763672 tensor(0.9947) 0.0
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 2.97476
+wandb:           MIA 0.0
+wandb:    MethodTime 593.51576
+wandb: RetainTestAcc 80.97735
+wandb:       TestAcc 77.03026
+wandb:           ZRF 0.99471
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_142014-l7kea2cx
+wandb: Find logs at: ./wandb/offline-run-20240814_142014-l7kea2cx/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+UNSIR
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Loss: 302.1882629394531
+Loss: 127.13289642333984
+Loss: 41.76837921142578
+Loss: 9.60024642944336
+Loss: -1.2985916137695312
+Epoch [0], last_lr: 0.00010, train_loss: 0.3057, val_loss: 0.8190, val_acc: 78.3640
+Epoch [0], last_lr: 0.00010, train_loss: 0.0670, val_loss: 0.7763, val_acc: 79.6928
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+77.5975341796875 79.69276428222656 tensor(0.9256) 0.262
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 38.13101
+wandb:           MIA 0.262
+wandb:    MethodTime 826.16943
+wandb: RetainTestAcc 79.69276
+wandb:       TestAcc 77.59753
+wandb:           ZRF 0.92557
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_143054-pdxolz71
+wandb: Find logs at: ./wandb/offline-run-20240814_143054-pdxolz71/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.
+
+-----------------------------------------------------------------------------------------------------------------------
+RETRAIN
+-----------------------------------------------------------------------------------------------------------------------
+Files already downloaded and verified
+Files already downloaded and verified
+wandb: (1) Create a W&B account
+wandb: (2) Use an existing W&B account
+wandb: (3) Don't visualize my results
+wandb: Enter your choice: 3 
+wandb: You chose "Don't visualize my results"
+wandb: Tracking run with wandb version 0.17.5
+wandb: W&B syncing is set to `offline` in this directory.  
+wandb: Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+Epoch [0], last_lr: 0.00999, train_loss: 0.8079, val_loss: 0.8233, val_acc: 75.4899
+Epoch [1], last_lr: 0.01999, train_loss: 0.5415, val_loss: 1.0166, val_acc: 69.0931
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/optim/lr_scheduler.py:232: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+Epoch [2], last_lr: 0.01000, train_loss: 0.2746, val_loss: 0.7724, val_acc: 77.4194
+Epoch [3], last_lr: 0.01000, train_loss: 0.1383, val_loss: 0.8461, val_acc: 77.2381
+Epoch [4], last_lr: 0.01000, train_loss: 0.1103, val_loss: 0.9078, val_acc: 76.7902
+Epoch [5], last_lr: 0.01000, train_loss: 0.1067, val_loss: 0.9121, val_acc: 76.7872
+Epoch [6], last_lr: 0.01000, train_loss: 0.0932, val_loss: 0.9818, val_acc: 75.9798
+Epoch [7], last_lr: 0.01000, train_loss: 0.1081, val_loss: 0.9675, val_acc: 75.6187
+Epoch [8], last_lr: 0.01000, train_loss: 0.1080, val_loss: 0.9300, val_acc: 76.3842
+Epoch [9], last_lr: 0.01000, train_loss: 0.0934, val_loss: 0.9054, val_acc: 76.8396
+Epoch [10], last_lr: 0.01000, train_loss: 0.0677, val_loss: 0.9439, val_acc: 76.7408
+Epoch [11], last_lr: 0.01000, train_loss: 0.0548, val_loss: 0.9590, val_acc: 76.6853
+Epoch [12], last_lr: 0.01000, train_loss: 0.0465, val_loss: 0.9855, val_acc: 75.6861
+Epoch [13], last_lr: 0.01000, train_loss: 0.0627, val_loss: 0.9928, val_acc: 75.5123
+Epoch [14], last_lr: 0.01000, train_loss: 0.0845, val_loss: 1.0649, val_acc: 73.9768
+Epoch [15], last_lr: 0.00200, train_loss: 0.0217, val_loss: 0.7686, val_acc: 80.6283
+Epoch [16], last_lr: 0.00200, train_loss: 0.0061, val_loss: 0.7521, val_acc: 80.6388
+Epoch [17], last_lr: 0.00200, train_loss: 0.0043, val_loss: 0.7394, val_acc: 81.0163
+Epoch [18], last_lr: 0.00200, train_loss: 0.0036, val_loss: 0.7300, val_acc: 81.2260
+Epoch [19], last_lr: 0.00200, train_loss: 0.0034, val_loss: 0.7310, val_acc: 81.0058
+Epoch [20], last_lr: 0.00200, train_loss: 0.0029, val_loss: 0.7270, val_acc: 81.3204
+Epoch [21], last_lr: 0.00200, train_loss: 0.0026, val_loss: 0.7225, val_acc: 81.1421
+Epoch [22], last_lr: 0.00200, train_loss: 0.0026, val_loss: 0.7142, val_acc: 81.2680
+Epoch [23], last_lr: 0.00200, train_loss: 0.0036, val_loss: 0.7178, val_acc: 81.4043
+Epoch [24], last_lr: 0.00200, train_loss: 0.0031, val_loss: 0.7088, val_acc: 81.2470
+Epoch [25], last_lr: 0.00200, train_loss: 0.0025, val_loss: 0.7012, val_acc: 81.3938
+Epoch [26], last_lr: 0.00200, train_loss: 0.0024, val_loss: 0.6956, val_acc: 81.5931
+Epoch [27], last_lr: 0.00200, train_loss: 0.0025, val_loss: 0.6951, val_acc: 81.4987
+Epoch [28], last_lr: 0.00200, train_loss: 0.0026, val_loss: 0.6937, val_acc: 81.5931
+Epoch [29], last_lr: 0.00200, train_loss: 0.0024, val_loss: 0.6888, val_acc: 81.6874
+Epoch [30], last_lr: 0.00040, train_loss: 0.0023, val_loss: 0.6897, val_acc: 81.7084
+Epoch [31], last_lr: 0.00040, train_loss: 0.0023, val_loss: 0.6898, val_acc: 81.6035
+Epoch [32], last_lr: 0.00040, train_loss: 0.0022, val_loss: 0.6868, val_acc: 81.6590
+Epoch [33], last_lr: 0.00040, train_loss: 0.0022, val_loss: 0.6860, val_acc: 81.8028
+Epoch [34], last_lr: 0.00040, train_loss: 0.0023, val_loss: 0.6857, val_acc: 81.7399
+Epoch [35], last_lr: 0.00008, train_loss: 0.0023, val_loss: 0.6903, val_acc: 81.4672
+Epoch [36], last_lr: 0.00008, train_loss: 0.0022, val_loss: 0.6831, val_acc: 81.6665
+Epoch [37], last_lr: 0.00008, train_loss: 0.0024, val_loss: 0.6903, val_acc: 81.7084
+Epoch [38], last_lr: 0.00008, train_loss: 0.0023, val_loss: 0.6873, val_acc: 81.5197
+Epoch [39], last_lr: 0.00008, train_loss: 0.0023, val_loss: 0.6866, val_acc: 81.5197
+/home/mtech1/anaconda3/lib/python3.12/site-packages/torch/nn/functional.py:2994: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+77.43829345703125 81.5196533203125 tensor(0.9504) 0.1376
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            Df ▁
+wandb:           MIA ▁
+wandb:    MethodTime ▁
+wandb: RetainTestAcc ▁
+wandb:       TestAcc ▁
+wandb:           ZRF ▁
+wandb: 
+wandb: Run summary:
+wandb:            Df 0.0
+wandb:           MIA 0.1376
+wandb:    MethodTime 804.66345
+wandb: RetainTestAcc 81.51965
+wandb:       TestAcc 77.43829
+wandb:           ZRF 0.95037
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/mtech1/selective-synaptic-dampening/src/wandb/offline-run-20240814_145459-wg7b2cd0
+wandb: Find logs at: ./wandb/offline-run-20240814_145459-wg7b2cd0/logs
+wandb: WARNING The new W&B backend becomes opt-out in version 0.18.0; try it out with `wandb.require("core")`! See https://wandb.me/wandb-core for more information.

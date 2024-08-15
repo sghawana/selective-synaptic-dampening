@@ -10,10 +10,11 @@ seed=$2
 #############################################################
 ################ CIFAR20 VEHICLE FORGETTING #################
 #############################################################
-declare -a StringArray=("vehicle2" "veg" "people" "electrical_devices" "natural_scenes" ) # classes to iterate over
+#declare -a StringArray=("vehicle2" "veg" "people" "electrical_devices" "natural_scenes" ) # classes to iterate over
+declare -a StringArray=("vehicle2")
 dataset=Cifar20
 n_classes=20
-weight_path= # Add the path to your ResNet weights
+weight_path=/home/mtech1/selective-synaptic-dampening/src/checkpoint/ResNet18/Wednesday_14_August_2024_11h_24m_35s/ResNet18-Cifar20-40-best.pth
 
 for val in "${StringArray[@]}"; do
     forget_class=$val

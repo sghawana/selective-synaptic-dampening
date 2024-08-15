@@ -73,7 +73,7 @@ parser.add_argument(
         "amnesiac",
         "UNSIR",
         "FisherForgetting",
-        "ssd_tuning",
+        "pdr_tuning",
     ],
     help="select unlearning method from choice set",
 )
@@ -105,7 +105,7 @@ batch_size = args.b
 
 # get network
 net = getattr(models, args.net)(num_classes=args.superclasses)
-net.load_state_dict(torch.load(args.weight_path))
+net.load_state_dict(torch.load(args.weight_path, weights_only=True))
 
 unlearning_teacher = getattr(models, args.net)(num_classes=args.superclasses)
 

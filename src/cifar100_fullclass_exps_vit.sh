@@ -10,12 +10,12 @@ seed=$2
 #############################################################
 ################ CIFAR100 ROCKET FORGETTING #################
 #############################################################
-declare -a StringArray=("rocket" "mushroom" "baby" "lamp" "sea") # classes to iterate over
-
+#declare -a StringArray=("rocket" "mushroom" "baby" "lamp" "sea") # classes to iterate over
+declare -a StringArray=("rocket")
 
 dataset=Cifar100
 n_classes=100
-weight_path= # Add the path to your ViT weights
+weight_path=/home/mtech1/selective-synaptic-dampening/src/checkpoint/ViT/Wednesday_14_August_2024_13h_19m_20s/ViT-Cifar100-8-best.pth
 
 for val in "${StringArray[@]}"; do
     forget_class=$val
